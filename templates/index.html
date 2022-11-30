@@ -1,0 +1,277 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+</head>
+
+
+  <body>
+
+    <ul id="ul">
+      <li><a target="_blank" href="../">Home</a></li>
+      <li><a target="_blank" href="../index/">index</a></li>
+      <li><a target="_blank" href="../contact/">Contact</a></li>
+      <li><a target="_blank" href="../view/">view</a></li>
+      <pre>                                                                                               <input type="search" id="search">  Search</pre>
+    </ul>
+
+    <br><br><br><br><br><br><br><br>
+
+    <fieldset id="fieldset">
+loreum ipsum dolor sit amet 
+      <legend>
+        Data Base Managment
+      </legend>
+
+      <table id="table" style="width:100%">
+        <tr>
+          <th id="heading1">name</th>
+          <th id="heading2">father_name</th>
+          <th id="heading3">gender</th>
+          <th id="heading4">Class</th>
+          <th id="heading5">section</th>
+          <th id="heading6">roll_no</th>
+          <th id="heading7">photo</th>
+          <th id="heading8">date</th>
+          <th id="heading9">native_country</th>
+          <th id="heading10">native_language</th>
+          <th id="heading11">language_to_learn</th>
+        </tr>
+        <tr>
+
+          <!-- Name -->
+          <td id="td1">{{name}
+          </td>
+
+          <!-- Father_Name -->
+          <td id="td2">{{father_name}}
+          </td>
+
+          <!-- Gender -->
+          <td id="td3">{{gender}}
+
+          </td>
+
+          <!-- Class -->
+          <td id="td4">{{Class}}</td>
+
+          <!-- Section -->
+          <td id="td5">{{section}}</td>
+
+          <!-- Roll_No -->
+          <td id="td6">{{roll_no}}</td>
+
+          <!-- Photo -->
+          <td id="td7"><img src="{{photo.url}}" alt="Img Is Not"> </td>
+
+          <!-- Date -->
+          <td id="td8">{{date}}</td>
+
+          <!-- Native_Country -->
+          <td id="td9">{{native_country}}</td>
+
+          <!-- native_language -->
+          <td id="td10">{{native_language}}</td>
+
+          <!-- language_To_Learn -->
+          <td id="td11">{{language_to_learn}}</td>
+
+        </tr>
+        
+      </table>
+
+    </fieldset>
+
+
+
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float:left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding:16px;
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: lightblue;
+      }
+
+      #search {
+        width: 200px;
+        height: 30px;
+        color: blue;
+        font-size: 20px;
+      }
+
+
+      #table,
+      th,
+      td {
+        border: 5px solid rgb(163, 22, 22);
+        border-style: double;
+        height: 50px;
+      }
+
+      #table,
+      th,
+      td:hover {
+        font-size: 1.0rem;
+        font: italic;
+
+      }
+
+      td {
+        width: 50px;
+        height: 34px;
+      }
+
+      #td1:hover {
+        background-color: brown;
+        color: brown;
+      }
+
+      #td2:hover {
+        background-color: deeppink;
+        color: deeppink;
+      }
+
+      #td3:hover {
+        background-color: blueviolet;
+        color: blueviolet;
+      }
+
+      #td4:hover {
+        background-color: chartreuse;
+        color: chartreuse;
+      }
+
+      #td5:hover {
+        background-color: cornflowerblue;
+        color: cornflowerblue;
+      }
+
+      #td6:hover {
+        background-color: darkblue;
+        color: darkblue;
+      }
+
+      #td7:hover {
+        background-color: darkorange;
+        color: darkorange;
+      }
+
+      #td8:hover {
+        background-color: indigo;
+        color: indigo;
+      }
+
+      #td9:hover {
+        background-color: cyan;
+        color: cyan;
+      }
+
+      #td10:hover {
+        background-color: khaki;
+        color: khaki;
+      }
+
+      #td11:hover {
+        background-color: lightcoral;
+        color: lightcoral;
+      }
+
+      #heading1:hover {
+        background-color: deeppink;
+
+      }
+
+      #heading2:hover {
+        background-color: chartreuse;
+      }
+
+      #heading3:hover {
+        background-color: cornflowerblue;
+      }
+
+      #heading4:hover {
+        background-color: deeppink;
+      }
+
+      #heading5:hover {
+        background-color: darkblue;
+      }
+
+      #heading6:hover {
+        background-color: darkorange;
+      }
+
+      #heading7:hover {
+        background-color: indigo;
+      }
+
+      #heading8:hover {
+        background-color: cyan;
+      }
+
+      #heading9:hover {
+        background-color: khaki;
+      }
+
+      #heading10:hover {
+        background-color: blueviolet;
+      }
+
+      #heading11:hover {
+        background-color: lightcoral;
+      }
+
+      #fieldset:hover {
+        box-shadow: 4px 4px 4px red;
+        border-radius: 35px;
+        border-color: blue;
+        height: 200px;
+      }
+
+      #footer {
+        width: 100%;
+        height: 50px;
+        background-color: #777;
+      }
+    </style>
+
+
+
+    <br><br><br><br><br><br><br><br>
+
+    <footer id="footer">
+      <h1>&copy;2019 (ILU) international language urdu.com
+     
+      </h1>
+     <a href="../adeemaamir.pythonanywhere.com" >website link</a>
+    </footer>
+
+
+
+  </body>
+
+
+</html>

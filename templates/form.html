@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+
+<center>
+    <fieldset>
+
+        <legend>form</legend>
+
+
+        <form action="../view/" method="POST">
+            {% csrf_token %}
+            <input type="text" name="name" id="name">name <br><br>
+            <input type="email" name="email" id="email">email <br><br>
+            <button id="submit" type="submit">submit</button>
+        </form>
+    </fieldset>
+</center>
+<style>
+
+        #input {
+            background-color: rgb(255, 0, 0);
+        }
+
+        #submit {
+            background-color: deeppink;
+            width: 60px;
+            height: 30px;
+            border-radius: 30px;
+        }
+
+        #submit:hover {
+            zoom: 1.7;
+        }
+    </style>
+
+
+</body>
+
+</html>
